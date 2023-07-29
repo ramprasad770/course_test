@@ -7,7 +7,9 @@
     <meta name="description" content="Discover the power of Java and Web Development through our comprehensive online courses. Master the fundamentals of Java programming, from syntax to object-oriented concepts, and unlock the secrets of building dynamic websites with HTML, CSS, and JavaScript. Our hands-on approach and industry-experienced instructors will equip you with the skills to excel in the ever-evolving tech landscape. Enroll now and embark on a learning journey that opens doors to exciting opportunities in the world of programming. Start your Java and Web Development adventure today!">
     <meta name="keywords" content="Java, Web Development, Programming, Online Course, Java Basics, Web Development Basics, HTML, CSS, JavaScript, Object-Oriented Programming, Learn Java, Learn Web Development, Online Learning, Coding, Programming Basics, Java Programming, Web Development Fundamentals, Java Course, Web Development Course, Beginner-friendly, Learn Coding, Java Classes, Web Development Classes, Java Training, Web Development Training, Online Education,basics,ram,ramprasad,prasad,venkata,pade,form,Coding Bootcamp.">
     <meta name="author" content="pade venkata ramprasad">
-    <title>Form</title>
+    <title>Ramprasad tutorials</title>
+    <link rel="canonical" href="https://ramprasad.tech/" />
+    <link rel="icon" type="image/x-icon" href="./logos/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
@@ -15,6 +17,26 @@
 
     <style>
         @media only screen and (min-width:480px){
+            .menu_bar{
+                padding: 0;
+                margin: 0;
+                background-color: black;
+            }
+
+            ul{
+                padding: 0;
+                margin: 0;
+                height:60px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            nav>ul>li>a{
+                color: white;
+                text-decoration: none;
+            }
+
         .download_link{
             color: red;
             text-decoration: none;
@@ -102,6 +124,24 @@
 
 
         @media only screen and (max-width:480px){
+
+            .menu_bar{
+                background-color: black;
+            }
+
+            ul{
+                height:60px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            nav>ul>li>a{
+                color: white;
+                text-decoration: none;
+            }
+
+
         .select{
             height: 45px;
             width: 260px;
@@ -191,10 +231,22 @@
 
 </head>
 <body>
+    <div class="menu_bar">
+        <nav class="nav_bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#log-in/out">Log-In/Out</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="jumbotron text-center">
         <header>
-            <h3>Are you interested in learning web development or java?</h3><br>
-            <h4>Then you are on the right page</h4>
+            <h1>Welcome to RP Tutorials.</h1>
+            <h2>Are you interested in learning web development or java?</h2><br>
+            <h4>Then you are on the right page.</h4>
         </header>
     </div>
     <div>
@@ -281,11 +333,11 @@
         </div>
         <div class="form text-center">
             <h3>Course Curriculum</h3>
-            <h4>Web Development curriculum <a class="download_link" href="web_syllabus.pptx" download="web_dev_syllabus">Download</a> </h4>
-            <h4>Java curriculum <a class="download_link" href="java_syllabus.pptx" download="java_syllabus">Download</a> </h4>
+            <h4>Web Development curriculum <a class="download_link" href="web-syllabus.pptx" download="web_dev_syllabus">Download</a> </h4>
+            <h4>Java curriculum <a class="download_link" href="java-syllabus.pptx" download="java_syllabus">Download</a> </h4>
             <br>
             <br>
-            <h4>Please fill the form then👇</h4><br>
+            <h4>Please fill the form to get started👇</h4><br>
             <form action="/submit" method="post">
                 <input class="form-control-lg" type="text" id="name" name="name" placeholder="Enter your Full name" required><br><br>
                 <input class="form-control-lg" type="email" id="email" name="email" placeholder="Enter your Email ID" required><br><br>
